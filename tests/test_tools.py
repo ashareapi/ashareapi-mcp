@@ -23,12 +23,12 @@ M = _load()
 
 FREE_TOOLS = {
     "ashare_quote", "ashare_kline", "ashare_hot",
-    "ashare_market_overview", "ashare_changedist",
+    "ashare_market_overview", "ashare_changedist", "ashare_wiki_search",
 }
 
 
 def test_tool_count():
-    assert len(M.TOOLS) == 25
+    assert len(M.TOOLS) == 94
 
 
 def test_default_api_is_official_domain():

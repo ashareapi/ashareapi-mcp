@@ -2,3 +2,7 @@ __pycache__/
 *.py[cod]
 .venv/
 .pytest_cache/
+
+# 手工备份（不进仓库）
+*.bak*
+_bak_*
