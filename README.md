@@ -253,8 +253,16 @@ docker run -i --rm -e ASHARE_KEY=ct-你的Key ashareapi/mcp
 docker run -p 8080:8080 -e ASHARE_KEY=ct-你的Key ashareapi/mcp gateway
 ```
 
-镜像里**不含任何数据源**：数据全部来自 `https://api.ashareapi.com`，Key 只通过环境变量传入。
+镜像里的数据统一来自 `https://api.ashareapi.com`；Key 通过环境变量传入，不写进镜像。
 细节（构建方式、环境变量、配置示例）见 [`docker/README.md`](docker/README.md)。
+
+---
+
+## 官方 MCP Registry
+
+已收录：**`com.ashareapi/ashare-data-api`** —— 支持 Registry 的客户端可以按名字找到本服务，不用手填 URL。
+
+条目里同时登记了远程端点（`https://api.ashareapi.com/mcp`）和 Docker 包（`docker.io/ashareapi/mcp`）—— 填 URL、用镜像，是同一条记录。
 
 ---
 

@@ -18,6 +18,8 @@ LABEL org.opencontainers.image.description="A-Share data API - MCP server & loca
 LABEL org.opencontainers.image.source="https://github.com/ashareapi/ashareapi-mcp"
 LABEL org.opencontainers.image.url="https://ashareapi.com/mcp"
 LABEL org.opencontainers.image.licenses="MIT"
+# 官方 MCP Registry 要求：镜像必须声明它对应哪个 server.json 条目
+LABEL io.modelcontextprotocol.server.name="com.ashareapi/ashare-data-api"
 
 WORKDIR /app
 

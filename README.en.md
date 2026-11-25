@@ -253,8 +253,16 @@ docker run -i --rm -e ASHARE_KEY=ct-your-key ashareapi/mcp
 docker run -p 8080:8080 -e ASHARE_KEY=ct-your-key ashareapi/mcp gateway
 ```
 
-The image contains **no data source**: everything comes from `https://api.ashareapi.com`, and the key is passed only via environment variables.
+Data inside the image comes from `https://api.ashareapi.com`; the key is passed via environment variables and is never baked into the image.
 See [`docker/README.md`](docker/README.md) for build steps and options.
+
+---
+
+## Official MCP Registry
+
+Listed as **`com.ashareapi/ashare-data-api`** — registry-aware clients can find this server by name instead of typing a URL.
+
+The entry registers both the remote endpoint (`https://api.ashareapi.com/mcp`) and the Docker package (`docker.io/ashareapi/mcp`) — pointing at the URL and running the image are the same record.
 
 ---
 
